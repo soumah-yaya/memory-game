@@ -1,0 +1,186 @@
+body {
+    background-image: linear-gradient(-110deg, #82ccee, #f8b1c9);
+    font-family: 'Permanent Marker', cursive;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    text-align: center;
+    height: 100vh;
+}
+
+.header h1 {
+    font-family: 'Gloria Hallelujah', cursive;
+    margin: 10px 0;
+}
+
+.score-panel > div , .stars, .stars li {
+    display: inline-block;
+    margin: 10px;
+    padding: 0;
+}
+
+.score-panel .stars li {
+    margin: 0;
+}
+.restart{
+    color: #fff;
+    border: none;
+    padding: 8px 10px;
+    background-color: dodgerblue;
+}
+
+.game-field {
+    display: flex;
+    justify-content: center;
+}
+
+.game-field .deck {
+    width: 580px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.card {
+    width: 120px;
+    height: 110px;
+    margin: 5px;
+    background-color: #fff;
+}
+
+.card .front {
+    display: none;
+}
+
+.card.flip .front {
+    display: block;
+}
+
+.card.flip .back{
+    display: none;
+}
+
+.card:nth-child(1) .back {
+    background: #D0FF00;
+}
+
+.card:nth-child(2) .back {
+    background: #3AE2CE;
+}
+
+.card:nth-child(3) .back {
+    background: #B34EE9;
+}
+
+.card:nth-child(4) .back {
+    background: #00FFA9;
+}
+
+.card:nth-child(5) .back {
+    background: #FF00AE;
+}
+
+.card:nth-child(6) .back {
+    background: #7C9F4B;
+}
+
+.card:nth-child(7) .back {
+    background: #FFDD00;
+}
+
+.card:nth-child(8) .back {
+    background: #1F55A2;
+}
+
+.card:nth-child(9) .back {
+    background: #97408E;
+}
+
+.card:nth-child(10) .back {
+    background: #D6486E;
+}
+
+.card:nth-child(11) .back {
+    background: #19A354;
+}
+
+.card:nth-child(12) .back {
+    background: #4CC7E9;
+}
+
+.card:nth-child(13) .back {
+    background: #D6486E;
+}
+
+.card:nth-child(14) .back {
+    background: #ABD454;
+}
+
+.card:nth-child(15) .back {
+    background: #1F55A2;
+}
+
+.card:nth-child(16) .back {
+    background: #ED7155;
+}
+
+
+.popup {
+	margin: 70px auto;
+	padding: 20px;
+	background: #ffffff;
+	border-radius: 5px;
+	width: 800px;
+    position: relative;
+}
+
+#popup {
+    visibility: hidden;
+}
+
+.popup-overlay {
+    position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity 500ms;
+}
+
+.popup .close {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #333;
+}
+
+#starRating li {
+	display: inline-block;
+    color: yellow;
+}
+  
+#play-again {
+	background-color: #f87000;
+	padding: 0.7rem 1rem;
+	font-size: 1.1rem;
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+	font-family: 'Gloria Hallelujah', cursive;
+	color: #ffffff;
+    border-radius: 5px;
+    border: 0;
+}

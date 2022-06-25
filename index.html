@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animal Guess Game</title>
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"> -->
+    <script src="https://kit.fontawesome.com/fc42b5320a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Memory Game</h1>
+        </header>
+        <section class="score-panel">
+            <ul class="stars">
+                <li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+            </ul>
+            <span class="moves">0</span> Move(s)
+            <div class="timer"></div>
+            <!-- <div id="restart" class="restart">
+                <i class="fa fa-repeat"></i>
+            </div> -->
+            <button id="restart" class="restart">
+                Refresh 
+            </button>
+        </section>
+        <section class="game-field">
+            <ul class="deck">
+                <li class="card" data-type="mickey">
+                    <img class="front" src="img/1.jpg" alt="card">
+                    <img class="back" src="img/bg.png">
+                </li>
+                <li class="card" data-type="jerry">
+                    <img class="front" src="img/2.jpg" alt="card">
+                    <img class="back" src="img/bg.png">
+                </li>
+                <li class="card" data-type="jerry">
+                    <img class="front" src="img/2.jpg" alt="card">
+                    <img class="back" src="img/bg.png">
+                </li>
+                <li class="card" data-type="winney">
+                    <img class="front" src="img/3.jpg" alt="card">
+                    <img class="back" src="img/bg.png">
+                </li>
+                <li class="card" data-type="dog">
+                    <img class="front" src="img/4.jpg" alt="card">
+                    <img class="back" src="img/bg.png">
+                </li>
+                <li class="card" data-type="willy">
+                    <img class="front" src="img/5.jpg" alt="card">
+                    <img class="back" src="img/bg.png">
+                </li>
+                <li class="card" data-type="bird">
+                    <img class="front" src="img/13.gif" alt="card">
+                    <img class="back" src="img/bg.png">
+                </li>
+                <li class="card" data-type="bob">
+                    <img class="front" src="img/10.png" alt="card">
+                    <img class="back" src="img/bg.png">
+                </li>
+                <li class="card" data-type="scooby">
+                    <img class="front" src="img/8.jpg" alt="card">
+                    <img class="back" src="img/bg.png">
+                </li>
+                <li class="card" data-type="mickey">
+                    <img class="front" src="img/1.jpg" alt="card">
+                    <img class="back" src="img/bg.png">
+                </li>
+                <li class="card" data-type="winney">
+                    <img class="front" src="img/3.jpg" alt="card">
+                    <img class="back" src="img/bg.png">
+                </li>
+                <li class="card" data-type="dog">
+                    <img class="front" src="img/4.jpg" alt="card">
+                    <img class="back" src="img/bg.png">
+                 </li>
+                 <li class="card" data-type="willy">
+                    <img class="front" class="front" src="img/5.jpg" alt="card">
+                    <img  class="back"src="img/bg.png">
+                </li>
+                <li class="card" data-type="bob">
+                    <img class="front" src="img/10.png" alt="card">
+                    <img class="back" src="img/bg.png">
+                </li>
+                <li class="card" data-type="bird">
+                    <img class="front" src="img/13.gif" alt="card">
+                    <img class="back" src="img/bg.png">
+                </li>
+                <li class="card" data-type="scooby">
+                    <img class="front" src="img/8.jpg" alt="card">
+                    <img class="back" src="img/bg.png">
+                </li>
+            </ul>
+        </section>
+        <footer>
+            <p>&copy; Soumah Yaya. All Rights Reserved.</p>
+        </footer>
+        <div id="popup" class="popup-overlay">
+        <div class="popup">
+            <h2>Congratulations 🎉</h2>
+            <a class="close" href=# >×</a>
+            <div class="content">
+                <h3>Congratulations you're a winner 🎉🎉🎉</h3>
+                    <p>You made <span id=finalMove> </span> moves </p>
+                    <p>in <span id=totalTime> </span> </p>
+                    <p>Rating:  <span id=starRating></span></p>
+                    <button id="play-again">
+                    Play again 😄</a>
+                </button>
+            </div>
+        </div>
+        </div>
+    </div> 
+<script src="js/main.js"></script>
+</body>
+</html>
